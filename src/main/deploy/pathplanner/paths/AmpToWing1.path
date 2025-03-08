@@ -1,0 +1,76 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 0.7568917481584964,
+        "y": 6.6322409988569975
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 1.048461510985522,
+        "y": 7.009922887033274
+      },
+      "isLocked": false,
+      "linkedName": "AmpStart"
+    },
+    {
+      "anchor": {
+        "x": 2.5797215230794097,
+        "y": 7.0058881935945685
+      },
+      "prevControl": {
+        "x": 1.059135936453691,
+        "y": 7.0058881935945685
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "Wing1"
+    }
+  ],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 0.5,
+      "rotationDegrees": 0,
+      "rotateFast": false
+    }
+  ],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "intake",
+      "waypointRelativePos": 0.15,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "intake"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 4.0,
+    "maxAcceleration": 1.8,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 400.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 0,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "Speaker",
+  "previewStartingState": {
+    "rotation": 59.62383818064382,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}
